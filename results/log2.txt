@@ -1,0 +1,12 @@
+== stage final
+   done in 157.0s
+== stage costs
+   done in 367.0s
+== stage local_optima
+   done in 321.9s
+== stage datasize
+   done in 49.1s
+== stage missing
+   done in 47.7s
+== stage dedup
+   done in 27.9s

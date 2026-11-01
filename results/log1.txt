@@ -1,0 +1,115 @@
+== stage baselines
+{
+ "RandomForest": {
+  "test": {
+   "accuracy": 0.976491862567812,
+   "precision": 0.9813278008298755,
+   "recall": 0.9653061224489796,
+   "f1": 0.9732510288065843,
+   "roc_auc": 0.9965826265571163,
+   "error": 0.023508137432188048,
+   "tn": 607,
+   "fp": 9,
+   "fn": 17,
+   "tp": 473,
+   "n": 1106
+  },
+  "fit_time_s": 0.547788143157959,
+  "val": {
+   "accuracy": 0.961121157323689,
+   "precision": 0.9705263157894737,
+   "recall": 0.9408163265306122,
+   "f1": 0.9554404145077721,
+   "roc_auc": 0.9915849456665783,
+   "error": 0.03887884267631103,
+   "tn": 602,
+   "fp": 14,
+   "fn": 29,
+   "tp": 461,
+   "n": 1106
+  },
+  "cv_f1": [
+   0.9676975945017182,
+   0.9581749049429658,
+   0.9667466575248543
+  ]
+ },
+ "HistGBM": {
+  "test": {
+   "accuracy": 0.972875226039783,
+   "precision": 0.9752066115702479,
+   "recall": 0.963265306122449,
+   "f1": 0.9691991786447639,
+   "roc_auc": 0.9958289159819772,
+   "error": 0.027124773960216952,
+   "tn": 604,
+   "fp": 12,
+   "fn": 18,
+   "tp": 472,
+   "n": 1106
+  },
+  "fit_time_s": 0.300079345703125,
+  "val": {
+   "accuracy": 0.9593128390596745,
+   "precision": 0.9723991507430998,
+   "recall": 0.9346938775510204,
+   "f1": 0.9531737773152965,
+   "roc_auc": 0.9948416379538829,
+   "error": 0.04068716094032554,
+   "tn": 603,
+   "fp": 13,
+   "fn": 32,
+   "tp": 458,
+   "n": 1106
+  },
+  "cv_f1": [
+   0.9658002735978112,
+   0.9550600343053173,
+   0.9591002044989775
+  ]
+ },
+ "LogisticRegression": {
+  "test": {
+   "accuracy": 0.9285714285714286,
+   "precision": 0.9363057324840764,
+   "recall": 0.9,
+   "f1": 0.9177939646201873,
+   "roc_auc": 0.9781374238006891,
+   "error": 0.0714285714285714,
+   "tn": 586,
+   "fp": 30,
+   "fn": 49,
+   "tp": 441,
+   "n": 1106
+  },
+  "fit_time_s": 0.029466629028320312,
+  "val": {
+   "accuracy": 0.918625678119349,
+   "precision": 0.9329004329004329,
+   "recall": 0.8795918367346939,
+   "f1": 0.9054621848739496,
+   "roc_auc": 0.9745361781076066,
+   "error": 0.08137432188065097,
+   "tn": 585,
+   "fp": 31,
+   "fn": 59,
+   "tp": 431,
+   "n": 1106
+  },
+  "cv_f1": [
+   0.9196428571428571,
+   0.9138472270666201,
+   0.9166097060833903
+  ]
+ }
+}
+{'n': 11055, 'n_features': 30, 'n_phishing': 4898, 'n_legit': 6157, 'exact_duplicate_rows': 5206, 'unique_rows': 5849, 'unique_feature_vectors': 5785, 'conflicting_feature_vectors': 64, 'levels_per_feature': {'having_ip_address': [-1, 1], 'url_length': [-1, 0, 1], 'shortining_service': [-1, 1], 'having_at_symbol': [-1, 1], 'double_slash_redirecting': [-1, 1], 'prefix_suffix': [-1, 1], 'having_sub_domain': [-1, 0, 1], 'sslfinal_state': [-1, 0, 1], 'domain_registration_length': [-1, 1], 'favicon': [-1, 1], 'port': [-1, 1], 'https_token': [-1, 1], 'request_url': [-1, 1], 'url_of_anchor': [-1, 0, 1], 'links_in_tags': [-1, 0, 1], 'sfh': [-1, 0, 1], 'submitting_to_email': [-1, 1], 'abnormal_url': [-1, 1], 'redirect': [0, 1], 'on_mouseover': [-1, 1], 'rightclick': [-1, 1], 'popupwindow': [-1, 1], 'iframe': [-1, 1], 'age_of_domain': [-1, 1], 'dnsrecord': [-1, 1], 'web_traffic': [-1, 0, 1], 'page_rank': [-1, 1], 'google_index': [-1, 1], 'links_pointing_to_page': [-1, 0, 1], 'statistical_report': [-1, 1]}, 'test_rows_with_identical_train_vector': 761}
+   done in 3.9s
+== stage grid
+   done in 275.1s
+== stage encodings
+   done in 55.0s
+== stage overfit
+   done in 282.3s
+== stage vanishing
+   done in 26.1s

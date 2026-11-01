@@ -1,0 +1,1 @@
+{"config": ["adam", 3, 256, 0.3, 0.0001], "rule": "lowest mean validation BCE over 5 seeds across grid.json and regularization.json (raw coding, early stopping patience 25)", "unregularized_grid_best": ["adam", 1, 256, 0.0, 0.0]}
